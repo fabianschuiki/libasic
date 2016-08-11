@@ -1,0 +1,25 @@
+# Copyright (c) 2016 Fabian Schuiki
+INPUT = @PROJECT_SOURCE_DIR@/src/ @PROJECT_BINARY_DIR@/include/asic/
+RECURSIVE = YES
+EXCLUDE_SYMLINKS = YES
+
+# Make sure the paths are presented relative to the project directory.
+FULL_PATH_NAMES = YES
+STRIP_FROM_PATH = @PROJECT_SOURCE_DIR@ @PROJECT_BINARY_DIR@/include/
+STRIP_FROM_INC_PATH = @PROJECT_BINARY_DIR@/include/
+
+# Setup the project details.
+PROJECT_NAME = libasic
+PROJECT_BRIEF = "A collection of C libraries that read and write LEF and LIB files."
+
+# Automatically use the first sentence as brief description.
+JAVADOC_AUTOBRIEF = YES
+QT_AUTOBRIEF = YES
+REPEAT_BRIEF = YES
+
+# Include sources.
+SOURCE_BROWSER = YES
+
+# Setup the output formats.
+GENERATE_HTML = YES
+GENERATE_LATEX = NO
